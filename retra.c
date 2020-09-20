@@ -22,6 +22,21 @@ void arreglo()
 
 
 
+    void mostrar() {
+    int i,n;
+    char arreglo[20];
+	// Mostrar en pantalla n veces arreglo
+	printf("dime una palabra ");
+	scanf("%s",&arreglo);
+	printf("cuantas veces las quieres ver??? \n");
+	scanf("%i",&n);
+	for(i=0;i<n;i++){
+        printf("%sº\n",arreglo);
+	}
+    }
+
+
+
 void menu(){
     printf("----------MENU---------\n");
     printf("PRESIONA 1 PARA ARREGLOS\n");
