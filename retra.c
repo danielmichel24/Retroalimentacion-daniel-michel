@@ -35,6 +35,44 @@ void arreglo()
 	}
     }
 
+void datos(){
+    struct datos{
+
+    char nom[20];
+
+    char tipo[20];
+
+    int fuerza;
+
+    char salud[20];
+
+    }persona[5];
+    int i;
+    for(i=0;i<5;i++){
+        printf("dime el nombre  %i: \n",i+1);
+        scanf("%s",persona[i].nom);
+        fflush(stdin);
+        printf("dime el tipo de la persona  %i: \n",i+1);
+        scanf("%s",&persona[i].tipo);
+        fflush(stdin);
+        printf("dime en numeros la cantidad de fuerza  %i: \n",i+1);
+        scanf("%i",&persona[i].fuerza);
+        printf("dime la salud de su persona  %i: \n",i+1);
+        scanf("%s",persona[i].salud);
+        fflush(stdin);
+        system("cls");
+    }
+
+    for(i=0;i<5;i++){
+        printf("\n-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*\n");
+        printf("Ficha de la persona %i es:  \n",i+1);
+        printf("Nombre: %s \n",persona[i].nom);
+        printf("Tipo: %s \n",persona[i].tipo);
+        printf("Fuerza: %i \n",persona[i].fuerza);
+        printf("Salud: %s \n",persona[i].salud);
+
+        }
+    }
 
 
 void menu(){
